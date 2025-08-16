@@ -45,7 +45,8 @@ public static class GamesEndpoints
     //Extension methods must live in a static class because they’re just syntactic sugar for static methods.
     public static RouteGroupBuilder MapGamesEndpoints(this WebApplication app)
     {
-        var group = app.MapGroup("games");
+        var group = app.MapGroup("games")
+        .WithParameterValidation();
 
         // GET /games
         group.MapGet("/", () => games);
@@ -65,6 +66,7 @@ public static class GamesEndpoints
         // POST /game
         group.MapPost("/", (CreateGameDto newGame) =>
         {
+
             GameDto game = new(
                 games.Count + 1,
                 newGame.Name,
