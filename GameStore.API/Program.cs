@@ -1,9 +1,47 @@
+using GameStore.API.DTOs;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // ConfigurationBinder request pipeline
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+List<GameDto> games = [
+    new(
+        1,
+        "The Legend of Zelda: Breath of the Wild",
+        "Action-adventure",
+        59.99M,
+        new DateOnly(2017, 3, 3)),
+    new(
+        2,
+        "Super Mario Odyssey",
+        "Platformer",
+        49.99M,
+        new DateOnly(2017, 10, 27)),
+    new(
+        3,
+        "Minecraft",
+        "Sandbox",
+        29.99M,
+        new DateOnly(2011, 11, 18)),
+    new(
+        4,
+        "The Witcher 3: Wild Hunt",
+        "Role-playing",
+        39.99M,
+        new DateOnly(2015, 5, 19)),
+    new(
+        5,
+        "Dark Souls III",
+        "Action RPG",
+        39.99M,
+        new DateOnly(2016, 3, 24))
+];
+
+// GET /games
+app.MapGet("games", () => games);
+
+
 
 app.Run();
  
