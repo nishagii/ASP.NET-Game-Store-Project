@@ -1,4 +1,26 @@
 GET http://localhost:5001/games
 
 ###
-GET http://localhost:5001/games/2
+GET http://localhost:5001/games/1
+
+###
+POST  http://localhost:5001/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Kids and Family",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT  http://localhost:5001/games/1
+Content-Type: application/json
+
+  {
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Action",
+    "price": 9.99,
+    "releaseDate": "2017-03-03"
+  }
