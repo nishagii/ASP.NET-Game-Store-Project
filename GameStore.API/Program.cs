@@ -1,8 +1,12 @@
+using GameStore.API.Data;
 using GameStore.API.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ConfigurationBinder request pipeline
+var connString = builder.Configuration.GetConnectionString("GameStore");
+builder.Services.AddSqlite<GameStoreContext>(connString); 
+
+// ConfigurationBinder request pipel ine
 var app = builder.Build();
 
 app.MapGamesEndpoints();
