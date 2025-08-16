@@ -1,0 +1,89 @@
+## Ignore build outputs
+bin/
+obj/
+out/
+build/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+## VS Code
+.vscode/
+.history/
+
+## Visual Studio
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+
+## Rider
+.idea/
+
+## Logs and temp files
+*.log
+*.tlog
+*.tmp
+*.temp
+*.pidb
+*.svclog
+
+## Packages
+*.nupkg
+*.snupkg
+*.nuspec
+*.psess
+*.vsp
+*.vspscc
+*.vssscc
+packages/
+.nuget/
+*.lock.json
+
+## Test results
+TestResult*/
+TestResults/
+*.VisualState.xml
+*.coverage
+*.coveragexml
+
+## Resharper / dotCover
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.dotCover
+
+## Entity Framework
+*.dbmdl
+*.bak
+*.ldf
+*.mdf
+
+## Docker
+*.container
+*.dockerignore
+docker-compose.override.yml
+
+## OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## Others
+*.swp
+*.swo
+*.orig
