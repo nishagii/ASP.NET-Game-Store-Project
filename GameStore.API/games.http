@@ -8,8 +8,8 @@ POST  http://localhost:5001/games
 Content-Type: application/json
 
 {
-    
-    "genre": "Kids and Family",
+    "name": "Minecraft",
+    "genreId":5,
     "price": 19.99,
     "releaseDate": "2011-11-18"
 }
