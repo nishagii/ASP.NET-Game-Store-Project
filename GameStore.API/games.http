@@ -1,7 +1,7 @@
 GET http://localhost:5001/games
 
 ###
-GET http://localhost:5001/games/9
+GET http://localhost:5001/games/3
 
 ###
 POST  http://localhost:5001/games
@@ -15,16 +15,16 @@ Content-Type: application/json
 }
 
 ###
-PUT  http://localhost:5001/games/9
+PUT  http://localhost:5001/games/3  
 Content-Type: application/json
 
   {
-    "name": "The Legend of Zelda: Breath of the Wild",
-    "genre": "Action",
+    "name": "api raja ibbo",
+    "genreId": 2,
     "price": 9.99,
     "releaseDate": "2017-03-03"
   }
 
 ###
-DELETE http://localhost:5001/games/3
+DELETE http://localhost:5001/games/2
 
