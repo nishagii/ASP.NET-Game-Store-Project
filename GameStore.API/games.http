@@ -1,4 +1,4 @@
-@hostAddress = app-gamestore-be-dev-southeastasia-01.azurewebsites.net
+@hostAddress = https://app-gamestore-be-dev-southeastasia-01.azurewebsites.net/
 
 GET {{hostAddress}}/games
 
