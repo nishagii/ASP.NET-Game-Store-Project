@@ -8,10 +8,10 @@ POST  http://localhost:5001/games
 Content-Type: application/json
 
 {
-    "name": "Morning fighter 2",
-    "genreId":2,
+    "name": "Morning fighter 1",
+    "genreId":3,
     "price": 39.99,
-    "releaseDate": "2011-11-18"
+    "releaseDate": "2001-11-18"
 }
 
 ###
