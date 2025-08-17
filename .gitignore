@@ -87,3 +87,5 @@ desktop.ini
 *.swp
 *.swo
 *.orig
+
+.fake

@@ -1,10 +1,14 @@
-GET http://localhost:5001/games
+@hostAddress = app-gamestore-be-dev-southeastasia-01.azurewebsites.net
+
+GET {{hostAddress}}/games
+
+
 
 ###
-GET http://localhost:5001/games/3
+GET {{hostAddress}}/games/3
 
 ###
-POST  http://localhost:5001/games
+POST {{hostAddress}}/games
 Content-Type: application/json
 
 {
@@ -15,7 +19,7 @@ Content-Type: application/json
 }
 
 ###
-PUT  http://localhost:5001/games/3  
+PUT  {{hostAddress}}/games/3  
 Content-Type: application/json
 
   {
@@ -26,5 +30,5 @@ Content-Type: application/json
   }
 
 ###
-DELETE http://localhost:5001/games/2
+DELETE {{hostAddress}}/games/2
 
