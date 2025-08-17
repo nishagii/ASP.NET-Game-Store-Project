@@ -87,3 +87,12 @@ desktop.ini
 *.swp
 *.swo
 *.orig
+
+# Local database files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
