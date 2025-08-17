@@ -8,9 +8,9 @@ POST  http://localhost:5001/games
 Content-Type: application/json
 
 {
-    "name": "Minecraft",
-    "genreId":5,
-    "price": 19.99,
+    "name": "Morning fighter 2",
+    "genreId":2,
+    "price": 39.99,
     "releaseDate": "2011-11-18"
 }
 

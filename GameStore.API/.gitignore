@@ -1,11 +1,8 @@
-## Ignore build outputs
+## Build outputs
 bin/
 obj/
 out/
-build/
 [Bb]uild/
-[Bb]in/
-[Oo]bj/
 [Ll]og/
 
 ## User-specific files
@@ -41,14 +38,10 @@ build/
 *.pidb
 *.svclog
 
-## Packages
+## NuGet packages
 *.nupkg
 *.snupkg
 *.nuspec
-*.psess
-*.vsp
-*.vspscc
-*.vssscc
 packages/
 .nuget/
 *.lock.json
@@ -60,17 +53,24 @@ TestResults/
 *.coverage
 *.coveragexml
 
-## Resharper / dotCover
+## ReSharper / dotCover
 _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 *.dotCover
 
-## Entity Framework
+## Entity Framework local DB files
 *.dbmdl
 *.bak
 *.ldf
 *.mdf
+
+## SQLite databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
 
 ## Docker
 *.container
@@ -83,16 +83,7 @@ Thumbs.db
 ehthumbs.db
 desktop.ini
 
-## Others
+## Misc
 *.swp
 *.swo
 *.orig
-
-# Local database files
-*.db
-*.db-shm
-*.db-wal
-*.sqlite
-*.sqlite3
-*.mdf
-*.ldf
